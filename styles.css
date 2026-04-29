@@ -47,31 +47,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.2rem;
-  padding: 0.9rem 0;
+  gap: 0.9rem;
+  padding: 0.5rem 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
 }
 
 .brand-logo {
-  width: 130px;
+  height: clamp(50px, 6vw, 60px);
+  width: auto;
   display: block;
+  filter: drop-shadow(0 0 12px rgba(109, 255, 67, 0.18));
 }
 
-.main-nav {
-  display: flex;
-  gap: 1.35rem;
-}
-
-.nav-link {
-  color: var(--text);
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-.nav-link:hover {
-  color: var(--accent);
+.header-cta {
+  white-space: nowrap;
 }
 
 .btn {
@@ -375,19 +368,6 @@ p {
   }
 }
 
-@media (max-width: 900px) {
-  .nav-wrap {
-    flex-wrap: wrap;
-  }
-
-  .main-nav {
-    order: 3;
-    width: 100%;
-    justify-content: center;
-    padding-top: 0.45rem;
-  }
-}
-
 @media (max-width: 640px) {
   .container {
     width: min(var(--container-max), calc(100vw - 2.2rem));
@@ -395,6 +375,19 @@ p {
 
   .hero {
     padding-top: 5.8rem;
+  }
+
+  .nav-wrap {
+    padding: 0.42rem 0;
+  }
+
+  .brand-logo {
+    height: 50px;
+  }
+
+  .header-cta {
+    padding: 0.64rem 1rem;
+    font-size: 0.72rem;
   }
 
   .cta-layout {
