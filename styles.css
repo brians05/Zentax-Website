@@ -48,7 +48,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 0.9rem;
-  padding: 0.5rem 0;
+  padding: 0.35rem 0;
 }
 
 .brand {
@@ -60,7 +60,7 @@ body {
   height: clamp(50px, 6vw, 60px);
   width: auto;
   display: block;
-  filter: drop-shadow(0 0 12px rgba(109, 255, 67, 0.18));
+  filter: drop-shadow(0 0 8px rgba(109, 255, 67, 0.2));
 }
 
 .header-cta {
